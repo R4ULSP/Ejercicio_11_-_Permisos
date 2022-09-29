@@ -54,3 +54,5 @@ F
 Lapp/src/test/java/es/travelworld/ejercicio10_navigation/ExampleUnitTest.java,4\c\4c24f2650ca7dfb6b77f55e5f267ca2a74678724
 ‹
 [app/src/androidTest/java/es/travelworld/ejercicio10_navigation/ExampleInstrumentedTest.java,e\f\efc0d4a1f9f3e747098d23c2000f105b85de2ce2
+‡
+Wapp/src/main/java/es/travelworld/ejercicio11_permisos/view/fragments/LoginFragment.java,d\7\d70ebaf0d51c5a21437a6c38a1efb0ec971a4f00
