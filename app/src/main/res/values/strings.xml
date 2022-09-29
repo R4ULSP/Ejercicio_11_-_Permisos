@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Ejercicio 11 - Permisos</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="get_new">Get new</string>
+    <string name="create_new">Create new</string>
+    <string name="do_you_have_account">Do you have account?</string>
+    <string name="wip_feature">This hasn\'t been implemented yet.</string>
+    <string name="your_name">¿Como te llamas?</string>
+    <string name="your_lastname">¿Y tu apellido?</string>
+    <string name="your_age">¿Cuantos años tienes?</string>
+    <string name="privacy_policy">Política de Privacidad</string>
+    <string name="view_conditions">Ver Condiciones</string>
+    <string name="join">Me apunto</string>
+    <string name="todo">Aún no está implementado</string>
+    <string name="input_layput_name_error">Ups, no creo que sea correcto, revísalo</string>
+    <string name="input_layout_age_error">Esta app no es para ti</string>
+
+    <string name="home_activity_title">Tu App de Viajes</string>
+    <string name="home_activity_text">Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar. Si eres tu?No lo dudes accede a nuestra app y descubriras miles de destinos y facilidades para alquilar coches, ver el tiempo...</string>
+    <string name="next">Next</string>
+    <string name="home_title">Home</string>
+    <string name="card_calendar_text">USA, Los Angeles - 2 Weeks</string>
+    <string name="card_calendar_title">City of Los Angeles</string>
+    <string name="card_camping_text">Madives - 3 weeks</string>
+    <string name="card_camping_title">Beach vacation</string>
+    <string name="login_error">Error de usuario o contraseña</string>
+    <string name="register_title">Registro</string>
+    <string name="upcoming_meetups">Upcoming Meetups</string>
+    <string name="eurodisney">EuroDisney Website</string>
+    <string name="rent_a_car">Rent a car</string>
+    <string name="undestood">Entendido</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mainactivity_title">Tu App de Viajes</string>
+    <string name="mainactivity_text">Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar. Si eres tu?No lo dudes accede a nuestra app y descubriras miles de destinos y facilidades para alquilar coches, ver el tiempo...</string>
+    <string name="match_title">Find Yout Match!</string>
+    <string name="match_text">We\'ve helped millions across the nation find their perfect match... and you\'re the next!</string>
+    <string name="skip">Skip</string>
+    <string name="log_in">Log in</string>
+    <string name="roommate_title">Find the Perfect Roommate</string>
+
+    <string name="price_car">$%.2f/per day</string>
+</resources>

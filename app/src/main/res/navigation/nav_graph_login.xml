@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_login"
+    app:startDestination="@id/destinationFragment">
+
+    <fragment
+        android:id="@+id/destinationFragment"
+        android:name="es.travelworld.ejercicio11_permisos.view.fragments.DestinationFragment"
+        android:label="fragment_destination"
+        tools:layout="@layout/fragment_destination" >
+        <action
+            android:id="@+id/to_loginFragment_from_destinationFragment"
+            app:destination="@id/loginFragment"
+            app:exitAnim="@anim/to_left"
+            app:enterAnim="@anim/from_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="es.travelworld.ejercicio11_permisos.view.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/to_destinationFragment_from_loginFragment"
+            app:destination="@id/destinationFragment"
+            app:exitAnim="@anim/to_right"
+            app:enterAnim="@anim/from_left"/>
+        <action
+            android:id="@+id/to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"/>
+        <action
+            android:id="@+id/to_HomeActivity"
+            app:destination="@id/homeActivity"
+            app:exitAnim="@anim/to_left"
+            app:enterAnim="@anim/from_right"/>
+        <argument
+            android:name="arg_user"
+            app:argType="es.travelworld.ejercicio11_permisos.domain.User"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="es.travelworld.ejercicio11_permisos.view.fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/to_loginFragment_from_registerFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"/>
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="es.travelworld.ejercicio11_permisos.view.HomeActivity">
+        <argument
+            android:name="login_user"
+            app:argType="es.travelworld.ejercicio11_permisos.domain.User"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+    </activity>
+</navigation>

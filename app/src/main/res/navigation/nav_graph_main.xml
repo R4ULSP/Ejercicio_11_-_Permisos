@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_login"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="es.travelworld.ejercicio11_permisos.view.fragments.MainFragment"
+        android:label="Main Menu"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/to_loginActivity_from_mainFragment"
+            app:destination="@id/loginActivity"
+            app:exitAnim="@anim/to_right"
+            app:enterAnim="@anim/from_left"/>
+        <argument
+            android:name="login_user"
+            android:defaultValue="@null"
+            app:argType="es.travelworld.ejercicio11_permisos.domain.User"
+            app:nullable="true" />
+    </fragment>
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="es.travelworld.ejercicio11_permisos.view.LoginActivity">
+    </activity>
+</navigation>

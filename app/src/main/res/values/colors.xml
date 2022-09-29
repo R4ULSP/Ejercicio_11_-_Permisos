@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_100">#B2EBF2</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_800">#00695C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey_100">#4F969696</color>
+    <color name="yellow_700">#FFC107</color>
+    <color name="light_blue">#cbe3ff</color>
+    <color name="light_purple">#ecddff</color>
+    <color name="light_pink">#ffdbf5</color>
+    <color name="light_orange">#fff2ae</color>
+    <color name="dark_grey">#595858</color>
+
+    <color name="electric_car">#2C2F35</color>
+    <color name="classic_car">#8E4B13</color>
+    <color name="sport_car">#5A87E1</color>
+    <color name="flying_car">#945AB1</color>
+    <color name="motor_home">#617193</color>
+    <color name="pick_up">#9F846B</color>
+    <color name="airplane">#CA5858</color>
+    <color name="bus">#FADF82</color>
+</resources>

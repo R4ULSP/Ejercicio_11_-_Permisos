@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="registry_text_inputs" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginHorizontal">30dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="endIconDrawable">@drawable/ic_remove_red_eye</item>
+        <item name="endIconMode">custom</item>
+        <item name="startIconDrawable">@drawable/ic_face</item>
+        <item name="boxBackgroundColor">@color/grey_100</item>
+    </style>
+
+    <style name="home_buttons">
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconTint">@color/black</item>
+        <item name="android:radius">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="home_cards">
+        <item name="cardElevation">5dp</item>
+        <item name="cardCornerRadius">30dp</item>
+        <item name="android:layout_marginHorizontal">15dp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+    </style>
+
+    <style name="card_text" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+    </style>
+
+    <style name="card_title" parent="card_text">
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="android:textSize">@dimen/title_H2</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="login_NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>
