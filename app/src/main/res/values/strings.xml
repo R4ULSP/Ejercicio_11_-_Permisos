@@ -42,4 +42,8 @@
     <string name="roommate_title">Find the Perfect Roommate</string>
 
     <string name="price_car">$%.2f/per day</string>
+    <string name="permissions_denied">Al denegar los permisos de ubicación no podrá hacer uso de la aplicación.\n¿Está seguro de que desea salir?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="location_permission">Permiso de ubicación</string>
 </resources>

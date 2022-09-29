@@ -24,6 +24,8 @@ public abstract class References {
     public static final String PRUEBAS = "---PRUEBAS";
     public static final String DESTINATION_FRAGMENT = "destinationFragment";
 
+    public static final int LOCATION_REQUEST_CODE = 1;
+
     private References() {
         //Private constructor
     }

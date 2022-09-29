@@ -10,26 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-import com.google.android.material.button.MaterialButton;
+import com.travelworld.ejercicio11_permisos.R;
 
 import java.util.Objects;
 
-import com.travelworld.ejercicio11_permisos.R;
-import com.travelworld.ejercicio11_permisos.databinding.FragmentLoginBinding;
+public class PermissionRequestDialog extends DialogFragment implements View.OnClickListener {
 
-public class LoginErrorFragment extends DialogFragment implements View.OnClickListener {
-
-
-    public LoginErrorFragment() {
+    public PermissionRequestDialog() {
         // Empty constructor
     }
 
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstances) {
-        View view = inflater.inflate(R.layout.fragment_login_error, container);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.permission_request_dialog,container);
 
-        MaterialButton buttonUnderstood = view.findViewById(R.id.button_understood);
-        buttonUnderstood.setOnClickListener(this);
+
 
         return view;
     }
@@ -42,12 +38,13 @@ public class LoginErrorFragment extends DialogFragment implements View.OnClickLi
     }
 
 
-    public static LoginErrorFragment newInstance() {
-        return new LoginErrorFragment();
+    public static PermissionRequestDialog newInstance() {
+        return new PermissionRequestDialog();
     }
 
     @Override
     public void onClick(View view) {
+
         dismiss();
     }
 }
