@@ -1,19 +1,9 @@
 package es.travelworld.ejercicio11_permisos.view;
 
 
-
-import static es.travelworld.ejercicio11_permisos.domain.References.PRUEBAS;
-
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.Log;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -31,7 +21,6 @@ public class LoginActivity extends AppCompatActivity implements MatchFragment.On
 
     private ActivityLoginBinding binding;
     private NavController navController;
-    private boolean permissionAsked = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,62 +29,6 @@ public class LoginActivity extends AppCompatActivity implements MatchFragment.On
         setContentView(binding.getRoot());
 
         setUpNavigation();
-
-        checkPermissions();
-    }
-
-    private void checkPermissions() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            //Permisos no concedidos
-            //TODO cuando pregunta los permisos la app no se bloquea hasta obtener respuesta, hay que buscar la forma de hacerlo
-            if (showRationale()) {
-                showPermissionsDialog(getString(R.string.location_permission), getString(R.string.permissions_denied));
-            } else if(!showRationale() && !permissionAsked) {
-                askForPermission();
-            }
-
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        int result = 0;
-        for (int grantResult : grantResults) {
-            result = grantResult;
-        }
-
-        //TODO Ahora se queda en loop de No y cuando se da que deje de preguntar el codigo sigue siendo -1
-        if(result == -1){
-            checkPermissions();
-        }
-    }
-
-    private boolean showRationale(){
-        return shouldShowRequestPermissionRationale(Manifest.permission.ACCESS_COARSE_LOCATION);
-    }
-
-    private void showPermissionsDialog(String title, String message) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(title)
-                .setMessage(message)
-                .setPositiveButton(R.string.yes, (dialogInterface, i) -> {
-                    //Click salir
-                    finish();
-                }).setNegativeButton(R.string.no, (dialogInterface, i) -> {
-                    //Click pedir permiso de nuevo
-                    askForPermission();
-                });
-
-        AlertDialog dialog = builder.create();
-        dialog.show();
-    }
-
-    private void askForPermission() {
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1234);
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 12345);
-        permissionAsked = true;
     }
 
     private void setUpNavigation() {

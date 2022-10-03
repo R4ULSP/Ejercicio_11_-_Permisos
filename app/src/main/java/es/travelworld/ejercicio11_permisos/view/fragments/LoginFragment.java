@@ -51,6 +51,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         binding = FragmentLoginBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
+        user = new User("1234","5678","18-99","1234");
+
         if(user != null){
             Snackbar.make(binding.getRoot(), "Nombre: " + user.getName() + "  Apellidos: " + user.getLastname() + "  Edad:" + user.getAgeGroup(), BaseTransientBottomBar.LENGTH_LONG).show();
         }

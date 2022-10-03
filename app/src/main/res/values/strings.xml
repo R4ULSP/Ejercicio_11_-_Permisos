@@ -18,7 +18,7 @@
     <string name="input_layout_age_error">Esta app no es para ti</string>
 
     <string name="home_activity_title">Tu App de Viajes</string>
-    <string name="home_activity_text">Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar. Si eres tu?No lo dudes accede a nuestra app y descubriras miles de destinos y facilidades para alquilar coches, ver el tiempo...</string>
+    <string name="home_activity_text">Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar. Si eres tu?No lo dudes accede a nuestra app y descubriras miles de destinos y facilidades para alquilar coches, ver el tiempo…</string>
     <string name="next">Next</string>
     <string name="home_title">Home</string>
     <string name="card_calendar_text">USA, Los Angeles - 2 Weeks</string>
@@ -34,9 +34,9 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="mainactivity_title">Tu App de Viajes</string>
-    <string name="mainactivity_text">Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar. Si eres tu?No lo dudes accede a nuestra app y descubriras miles de destinos y facilidades para alquilar coches, ver el tiempo...</string>
+    <string name="mainactivity_text">Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar. Si eres tu?No lo dudes accede a nuestra app y descubriras miles de destinos y facilidades para alquilar coches, ver el tiempo…</string>
     <string name="match_title">Find Yout Match!</string>
-    <string name="match_text">We\'ve helped millions across the nation find their perfect match... and you\'re the next!</string>
+    <string name="match_text">We\'ve helped millions across the nation find their perfect match… and you\'re the next!</string>
     <string name="skip">Skip</string>
     <string name="log_in">Log in</string>
     <string name="roommate_title">Find the Perfect Roommate</string>
@@ -46,4 +46,6 @@
     <string name="yes">Si</string>
     <string name="no">No</string>
     <string name="location_permission">Permiso de ubicación</string>
+    <string name="permissions_rejected">Los permisos se han denegado de forma permanente, reinstale la app o conceda los permisos desde los ajustes del dispositivo.</string>
+    <string name="ok">OK</string>
 </resources>
